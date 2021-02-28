@@ -1,0 +1,71 @@
+{
+	"code": 0,
+	"msg": "success",
+	"count":5,
+	"data": [{
+		"userId":10001,
+		"userName":"jack",
+		"password":"",
+		"email":"123456@qq.com",
+		"avatar":"../../../static/images/default_avatar.png",
+		"signature":"走别人的路，让别人无路可走！",
+		"isLock":false,
+		"role":{
+			"roleId":1,
+			"roleName":"超级管理员"
+		},
+		"joinTime":"2020-04-25 14:07:23"
+	},{
+		"userId":10002,
+		"userName":"jack",
+		"password":"",
+		"email":"123456@qq.com",
+		"avatar":"../../../static/images/default_avatar.png",
+		"signature":"走别人的路，让别人无路可走！",
+		"isLock":false,
+		"role":{
+			"roleId":2,
+			"roleName":"管理员"
+		},
+		"joinTime":"2020-04-25 14:07:23"
+	},{
+		"userId":10003,
+		"userName":"jack",
+		"password":"",
+		"email":"123456@qq.com",
+		"avatar":"../../../static/images/default_avatar.png",
+		"signature":"走别人的路，让别人无路可走！",
+		"isLock":true,
+		"role":{
+			"roleId":2,
+			"roleName":"管理员"
+		},
+		"joinTime":"2020-04-25 14:07:23"
+	},{
+		"userId":10004,
+		"userName":"jack",
+		"password":"",
+		"email":"123456@qq.com",
+		"avatar":"../../../static/images/default_avatar.png",
+		"signature":"走别人的路，让别人无路可走！",
+		"isLock":false,
+		"role":{
+			"roleId":2,
+			"roleName":"管理员"
+		},
+		"joinTime":"2020-04-25 14:07:23"
+	},{
+		"userId":10005,
+		"userName":"jack",
+		"password":"",
+		"email":"123456@qq.com",
+		"avatar":"../../../static/images/default_avatar.png",
+		"signature":"走别人的路，让别人无路可走！",
+		"isLock":true,
+		"role":{
+			"roleId":0,
+			"roleName":"普通用户"
+		},
+		"joinTime":"2020-04-25 14:07:23"
+	}]
+}

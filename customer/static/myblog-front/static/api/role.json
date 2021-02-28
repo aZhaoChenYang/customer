@@ -1,0 +1,17 @@
+{
+	"code": 0,
+	"msg": "success",
+	"count": 3,
+	"data": [{
+			"roleId": 0,
+			"roleName": "普通用户"
+		},{
+			"roleId": 1,
+			"roleName": "超级管理员"
+		},
+		{
+			"roleId": 2,
+			"roleName": "管理员"
+		}
+	]
+}

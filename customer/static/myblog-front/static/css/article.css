@@ -1,0 +1,26 @@
+#tags{
+	text-align: center;
+}
+#tags a{
+	margin: 0px 5px;
+	font-size: 22px;
+	color: rbg(157,11,46);
+}
+#tags a:hover{
+	text-decoration: underline;
+}
+
+#category-nav {
+	text-align: center;
+	display: grid;
+}
+#category-nav a{
+	font-size: 18px;
+	margin: 2px 0px;
+	color: #444;
+	border:1px solid #d2d2d2;
+}
+#category-nav a:hover{
+	border: solid 1px #00aa00;
+	color: #00aa00;
+}

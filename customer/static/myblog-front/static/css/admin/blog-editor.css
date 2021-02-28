@@ -1,0 +1,19 @@
+.title-input-item{
+	width: 80%;
+	margin-right: 2%;
+	float: left;
+}
+#btn-saveblog{
+	float: left;
+	width: 18%;
+}
+.md-editor{
+	margin-top: 20px !important;
+}
+.blog-publish{
+	margin: 10px;
+	padding: 10px;
+}
+.checkbox-inline .layui-input-inline{
+	width: 80px;
+}

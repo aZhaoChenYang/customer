@@ -1,0 +1,294 @@
+/* 全局样式 */
+html {
+	background-color: #F2F2F2;
+	color: #444;
+}
+
+/* 头部样式 */
+.blog-header {
+	background-color: #393D49;
+	width: 100%;
+	height: 62px;
+	/* position: fixed; */
+	top: 0;
+	z-index: 100;
+}
+
+.fixed {
+	position: fixed;
+}
+
+/* logo样式 */
+.blog-logo {
+	line-height: 62px;
+	font-family: "comic sans ms";
+	font-size: xx-large;
+	color: #009688;
+	text-align: center;
+	float: left;
+}
+
+/* 移动端的按钮 */
+#mobile_show_nav {
+	background-color: #393D49;
+	border: 0px;
+	color: #F2F2F2;
+	/* margin: auto 0px; */
+	margin-left: 15px;
+}
+
+#mobile_show_nav i {
+	line-height: 60px;
+	font-size: 25px;
+}
+
+/* 移动端遮罩层 */
+.shadow {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 998;
+	background-color: #000;
+	opacity: 0.6;
+	display: none;
+}
+/* 移动端侧边导航栏样式 */
+.mobile-nav-left{
+	margin-top: 62px;
+	left: -200px;
+}
+
+/* 容器样式 */
+
+.blog-content {
+	margin-top: 10px;
+	/* background-color: #ffaa7f; */
+}
+
+/* 卡片样式 */
+.base-card,
+.article-card {
+	background-color: #fff;
+	margin: 10px 10px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+	padding: 10px 15px;
+	line-height: 24px;
+}
+
+.article-card>.article-title {
+	border-bottom: solid 1px #F6F6F6;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.article-card>.article-title>a {
+	font-size: 20px;
+}
+
+.article-card>.article-title>a:hover {
+	color: #009688;
+}
+
+.article-card>.article-title>span {
+	margin-left: 10px;
+}
+
+.article-card>.article-abstract {
+	padding: 10px 0px;
+	text-indent: 2em;
+}
+
+.article-card>.article-bottom {
+	color: #a6a6a6;
+}
+
+.article-card>.article-bottom>span {
+	margin-right: 7px;
+}
+
+.article-card>.article-bottom span:nth-child(5) {
+	float: right;
+}
+
+.article-card>.article-bottom>i {
+	font-size: 5px;
+}
+
+.article-card>.article-bottom>span a {
+	color: #009688;
+}
+
+.article-card>.article-bottom>span a:hover,
+.base-card .base-card-body .hot-blog a:hover {
+	color: #00aaff;
+}
+
+/* 基础卡片样式 */
+.base-card .base-card-header {
+	font-size: 17px;
+	border-bottom: solid 1px #e6e6e6;
+	padding-bottom: 5px;
+	/* text-align: center; */
+	color: #01aaed;
+}
+
+.base-card .base-card-header span a {
+	color: #01aaed;
+}
+
+.base-card .base-card-body {
+	padding: 10px 0px;
+}
+ 
+
+@media screen and (max-width: 500px) {	
+	/* 表单组居中 */
+	.form-center {
+		width: 100%;
+		margin: 100px auto;
+	}
+}
+/* 移动端适应 */
+@media screen and (min-width: 501px) {	
+	/* 表单组居中 */
+	.form-center {
+		width: 450px;
+		margin: 100px auto;
+	}
+}
+
+.form-center .base-card-header {
+	text-align: center;
+	font-size: 25px;
+}
+
+.form-center .layui-form-item a:hover {
+	color: #01AAED;
+}
+
+/* 分页容器居中 */
+.page-box {
+	text-align: center;
+}
+
+/* 输入框与按钮行内排列 */
+.input-box {
+	padding: 10px;
+}
+
+.input-box input {
+	width: 78%;
+	float: left;
+}
+
+.input-box button {
+	width: 20%;
+	margin-left: 2%;
+}
+
+/* 编辑器和评论相关 */
+.blog-editor-box {
+	margin: 10px 0px;
+}
+
+.blog-editor-box .layui-form-label {
+	text-align: left;
+	width: 30px;
+}
+
+.comment-display fieldset {
+	border: 1px solid #01aaed;
+}
+
+.comment-display fieldset legend {
+	text-align: center;
+	font-size: 20px;
+	color: #01aaed;
+}
+
+.comment-parent {
+	margin-bottom: 15px;
+	padding-top: 10px;
+	/* border-top: 1px dashed #01aaed; */
+}
+
+.comment-child {
+	margin-left: 50px;
+	padding: 10px 0px;
+	border-top: 1px dashed #01aaed;
+}
+
+/* 评论展示卡片 */
+.comment-card .comment-card-body img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	float: left;
+}
+
+.comment-card .comment-card-body .comment-info {
+	margin-left: 50px;
+}
+
+.comment-card .comment-card-body .comment-info span a {
+	color: #01aaed;
+}
+
+.comment-card .comment-card-footer {
+	padding-left: 50px;
+}
+
+.comment-card span {
+	margin-right: 10px;
+}
+
+
+/* 底部样式 */
+.blog-footer {
+	background-color: #393D49;
+}
+
+.blog-footer .layui-col-md4 {
+	color: white;
+	text-align: center;
+	margin: 20px 0px;
+	height: 200px;
+}
+
+.blog-footer .layui-col-md4 a {
+	text-decoration: none;
+	color: #ffffff;
+	margin: 0px 10px;
+}
+
+.blog-footer .layui-col-md4 a:hover {
+	color: #00aaff;
+}
+
+.blog-footer .layui-col-md4 p {
+	font-size: 20px;
+	margin-bottom: 25px;
+	color: #ffaa00;
+}
+
+.blog-footer .layui-col-md4:nth-child(1),
+.blog-footer .layui-col-md4:nth-child(2) {
+	border-right: solid 1px gray;
+}
+
+.blog-footer img {
+	width: 130px;
+	border-radius: 20px;
+}
+
+/* layui样式重写 */
+.layui-nav-item {
+	/* margin-left: 15px; */
+}
+
+.layui-card {
+	margin: 5px 10px;
+}

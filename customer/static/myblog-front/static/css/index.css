@@ -1,0 +1,69 @@
+/* 首页关于我信息卡样式 */
+.info-card{
+	background-color: #fff;
+	margin: 10px 10px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	padding: 10px 15px;
+	line-height: 24px;
+}
+
+.info-card .info-card-header{
+	font-size: 17px;
+	border-bottom: solid 1px #F6F6F6;
+	padding-bottom: 5px;
+	/* text-align: center; */
+	color: #01aaed;
+}
+.info-card .info-card-body, 
+.info-card .info-card-footer{
+	text-align: center;
+	padding: 15px 0px;
+}
+.info-card .info-card-body >img {
+	width: 40%;
+	border-radius: 50%;
+}
+.info-card .info-card-body >p {
+	margin-top: 5px;
+}
+.info-card .info-card-body > p:nth-child(2) {
+	font-size: 20px;
+	font-weight: bold;
+}
+.info-card .info-card-footer{
+	padding-top: 15px;
+	padding-bottom: 0px;
+	border-top: solid 1px #F6F6F6;
+}
+.info-card .info-card-footer i{
+	font-size: 25px;
+	padding: 0px 5px;
+}
+
+/* 公告通知 、系统时间*/
+.blog-broadcast,
+.systemtime
+{
+	background-color: #FFFFFF;
+	margin: 0px 10px;
+	padding: 3px 10px;
+	border-radius: 5px;
+	height: 30px;
+	line-height: 30px;
+}
+.blog-broadcast i,
+.blog-broadcast span{
+	font-size: 17px;
+	margin-top: 5px;
+	color: #ff5500;
+}
+.blog-broadcast span{
+	margin: 0px 10px;
+}
+
+.systemtime span{
+	float: right;
+	font-size: 20px;
+}
+	

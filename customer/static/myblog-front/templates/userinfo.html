@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心</title>
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../static/lib/animate.css" />
+		<link rel="stylesheet" href="../static/css/global.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../static/lib/layui/layui.js"></script>
+		<style>
+			.layui-upload{
+			margin: 10px auto;
+			text-align: center;
+		}
+		.layui-upload-img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="blog-content">
+			<div class="layui-container">
+				<div class="base-card animated bounceInDown">
+					<div class="base-card-header" style="text-align: center;">
+						<span style="font-size: 25px;">个人信息</span>
+					</div>
+					<div class="base-card-body">
+						<div class="layui-row">
+							<div class="layui-upload">
+								<div class="layui-upload-list">
+									<img class="layui-upload-img" src="../static/images/default_avatar.png" id="avatar">
+									<p id="upload-msg"></p>
+								</div>
+								<button type="button" class="layui-btn" id="upload-avatar">上传头像</button>
+
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-col-md7 layui-col-md-offset2">
+								<form class="layui-form" action="">
+									<div class="layui-form-item">
+										<label class="layui-form-label">用户名</label>
+										<div class="layui-input-block">
+											<input type="text" name="userName" lay-verify="required" lay-reqtext="用户名是必填项，岂能为空？"
+											 autocomplete="off" class="layui-input" readonly>
+										</div>
+									</div>
+
+									<div class="layui-form-item">
+										<label class="layui-form-label">邮箱</label>
+										<div class="layui-input-block">
+											<input type="text" name="email" lay-verify="email" autocomplete="off" class="layui-input" readonly>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<label class="layui-form-label">密码</label>
+										<div class="layui-input-block">
+											<input type="password" name="userPassword" lay-verify="required|pass" placeholder="请输入密码" autocomplete="off"
+											 class="layui-input" readonly>
+										</div>
+									</div>
+
+									<div class="layui-form-item layui-form-text">
+										<label class="layui-form-label">个性签名</label>
+										<div class="layui-input-block">
+											<textarea placeholder="这个人很懒,什么也没写!" name="signature" class="layui-textarea" readonly></textarea>
+										</div>
+									</div>
+
+									<div class="layui-form-item">
+										<div class="layui-input-block">
+											<button type="submit" class="layui-btn layui-btn-disabled" id="update-btn" lay-submit="" lay-filter="update-btn" disabled >立即更新</button>
+											<button type="button" id="modify-btn" class="layui-btn">修改</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="layui-row">
+							<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+								<ul class="layui-tab-title" style="text-align: center;">
+									<li class="layui-this">我的评论</li>
+									<li>我的留言</li>
+								</ul>
+								<div class="layui-tab-content">
+									<div class="layui-tab-item layui-show">1</div>
+									<div class="layui-tab-item">2</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../static/js/userinfo.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

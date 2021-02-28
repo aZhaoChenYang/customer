@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GZC的个人博客</title>
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../static/lib/animate.css" />
+		<link rel="stylesheet" href="../static/css/global.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../static/lib/layui/layui.js"></script>
+	</head>
+	<body>
+		<!-- 头部导航栏 -->
+		<div class="blog-header">
+			<div class="layui-container">
+				<div class="blog-logo">GZC</div>
+				<!-- 移动端显示 -->
+				<a id="mobile_show_nav" href="#" class="layui-hide-md"><i class="layui-icon layui-icon-spread-left"></i></a>
+				<!-- PC端水平显示，移动端侧边垂直显示 -->
+				<ul class="layui-nav layui-show-md-inline" id="nav_left" style="float: left;display: none;">
+					<li class="layui-nav-item layui-this">
+						<a href="index.html"><i class="fa fa-home"></i>&nbsp;首页</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="article.html"><i class="fa fa-file-text-o"></i>&nbsp;文章</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="timeline.html"><i class="fa fa-hourglass-half"></i>&nbsp;日记</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="photo.html"><i class="fa fa-photo"></i>&nbsp;相册</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="leavemessage.html"><i class="fa fa-commenting"></i>&nbsp;留言</a>
+					</li>
+				</ul>
+				<!-- 未登录状态 -->
+				<!-- <ul class="layui-nav" style="float: right;">
+					<li class="layui-nav-item">
+						<a href="login.html">登录</a>
+					</li>
+					<li class="layui-nav-item" lay-unselect="">
+						<a href="register.html">注册</a>
+					</li>
+				</ul> -->
+				<ul class="layui-nav" style="float: right;">
+					<li class="layui-nav-item">
+						<a href=""><i class="layui-icon layui-icon-notice"></i><span class="layui-hide-xs">通知</span><span class="layui-badge">9</span></a>
+					</li>
+					<li class="layui-nav-item" lay-unselect="">
+						<a href="javascript:;"><img src="../static/images/default_avatar.png" class="layui-nav-img"><span class="layui-hide-xs">我dsfafsafsdfsdafsdafsd</span></a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;">后台管理</a></dd>
+							<dd><a href="javascript:;">退出</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<!-- 移动端阴影遮罩层 -->
+			<div class="shadow"></div>
+		</div>
+		<!-- 内容区 -->
+		<div class="blog-content">
+			<div class="layui-container">
+				<div class="layui-row">
+					<div class="blog-broadcast">
+						<i class="fa fa-volume-up"></i>
+						<span id="notice">这是一条公告！！！大伙快看过来！！！</span>
+					</div>
+				</div>
+				<div class="layui-row">
+					<div class="layui-col-md8">
+						<!-- 文章展示小卡片 -->
+						<div class="article-card animated flipInX">
+							<div class="article-title">
+								<a href="details.html">基于SpringBoot的个人博客</a>
+								<span class="layui-badge layui-bg-green">原创</span>
+								<span class="layui-badge layui-bg-blue">置顶</span>
+							</div>
+							<div class="article-abstract">
+								<span>
+									基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客.....
+								</span>
+							</div>
+							<!-- 卡片底部展示发表时间、用户、分类 和 标签等-->
+							<div class="article-bottom">
+								<span>
+									<i class="layui-icon layui-icon-time"></i>
+									2020-04-18 01:25
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-username"></i>小郭啊
+								</span>
+								<span>
+									<i class="fa fa-folder-o"></i>
+									<a href="">springboot</a>&nbsp;&nbsp;
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-note"></i>
+									&nbsp;<a href="">mysql</a>
+									&nbsp;<a href="">mybatis</a>
+									&nbsp;<a href="">springboot</a>
+								</span>
+								<span>
+									<!-- 评论数和浏览数 -->
+									<i class="fa fa-commenting-o"></i>10
+									&nbsp;<i class="fa fa-eye"></i>1000
+								</span>
+							</div>
+						</div>
+						<div class="article-card animated zoomIn">
+							<div class="article-title">
+								<a href="">基于SpringBoot的个人博客</a>
+								<span class="layui-badge">转载</span>
+								<span class="layui-badge layui-bg-blue">置顶</span>
+							</div>
+							<div class="article-abstract">
+								<span>
+									基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客.....
+								</span>
+							</div>
+							<!-- 卡片底部展示发表时间、用户、分类 和 标签等-->
+							<div class="article-bottom">
+								<span>
+									<i class="layui-icon layui-icon-time"></i>
+									2020-04-18 01:25
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-username"></i>小郭啊
+								</span>
+								<span>
+									<i class="fa fa-folder-o"></i>
+									<a href="">springboot</a>&nbsp;&nbsp;
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-note"></i>
+									&nbsp;<a href="">mysql</a>
+									&nbsp;<a href="">mybatis</a>
+									&nbsp;<a href="">springboot</a>
+								</span>
+								<span>
+									<!-- 评论数和浏览数 -->
+									<i class="fa fa-commenting-o"></i>10
+									&nbsp;<i class="fa fa-eye"></i>1000
+								</span>
+							</div>
+						</div>
+						<div class="article-card animated zoomIn">
+							<div class="article-title">
+								<a href="">基于SpringBoot的个人博客</a><span class="layui-badge layui-bg-green">原创</span>
+							</div>
+							<div class="article-abstract">
+								<span>
+									基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客.....
+								</span>
+							</div>
+							<!-- 卡片底部展示发表时间、用户、分类 和 标签等-->
+							<div class="article-bottom">
+								<span>
+									<i class="layui-icon layui-icon-time"></i>
+									2020-04-18 01:25
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-username"></i>小郭啊
+								</span>
+								<span>
+									<i class="fa fa-folder-o"></i>
+									<a href="">springboot</a>&nbsp;&nbsp;
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-note"></i>
+									&nbsp;<a href="">mysql</a>
+									&nbsp;<a href="">mybatis</a>
+									&nbsp;<a href="">springboot</a>
+								</span>
+								<span>
+									<!-- 评论数和浏览数 -->
+									<i class="fa fa-commenting-o"></i>10
+									&nbsp;<i class="fa fa-eye"></i>1000
+								</span>
+							</div>
+						</div>
+						<div class="article-card animated zoomIn">
+							<div class="article-title">
+								<a href="">基于SpringBoot的个人博客</a><span class="layui-badge layui-bg-green">原创</span>
+							</div>
+							<div class="article-abstract">
+								<span>
+									基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客基于SpringBoot的个人博客.....
+								</span>
+							</div>
+							<!-- 卡片底部展示发表时间、用户、分类 和 标签等-->
+							<div class="article-bottom">
+								<span>
+									<i class="layui-icon layui-icon-time"></i>
+									2020-04-18 01:25
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-username"></i>小郭啊
+								</span>
+								<span>
+									<i class="fa fa-folder-o"></i>
+									<a href="">springboot</a>&nbsp;&nbsp;
+								</span>
+								<span>
+									<i class="layui-icon layui-icon-note"></i>
+									&nbsp;<a href="">mysql</a>
+									&nbsp;<a href="">mybatis</a>
+									&nbsp;<a href="">springboot</a>
+								</span>
+								<span>
+									<!-- 评论数和浏览数 -->
+									<i class="fa fa-commenting-o"></i>10
+									&nbsp;<i class="fa fa-eye"></i>1000
+								</span>
+							</div>
+						</div>
+						<!-- 分页DIV -->
+					</div>
+					<div class="layui-col-md4">
+						<!-- 关于我卡片 -->
+						<div class="info-card animated bounceInRight">
+							<div class="info-card-header">
+								<i class="layui-icon layui-icon-about"></i>
+								关于我
+							</div>
+							<div class="info-card-body">
+								<img src="../static/images/default_avatar.png" />
+								<p>GZC</p>
+								<p>一个渣娃的程序员</p>
+							</div>
+							<div class="info-card-footer">
+								<a href="javasript:;" id="qq" title="QQ"><i class="fa fa-qq"></i></a>
+								<a href="javasript:;" id="wechat" title="微信"><i class="fa fa-weixin"></i></a>
+								<a href="message.html" id="lm" title="留言"><i class="fa fa-commenting"></i></a>
+								<a href="https://github.com/GZC986707252" id="github" target="_blank" title="github"><i class="fa fa-github"></i></a>
+							</div>
+						</div>
+
+						<!-- 最新动态 -->
+						<div class="base-card animated bounceInRight delay-1s">
+							<div class="base-card-header">
+								<i class="layui-icon layui-icon-log"></i>最新动态
+								<span style="float: right;">
+									<a href="">more<i class="layui-icon layui-icon-right"></i></a>
+								</span>
+							</div>
+							<div class="base-card-body">
+								<ul class="layui-timeline">
+									<li class="layui-timeline-item">
+										<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+										<div class="layui-timeline-content layui-text">
+											<h3 class="layui-timeline-title">8月18日</h3>
+											<p>
+												layui 2.0 的一切准备工作似乎都已到位。发布之弦，一触即发。
+												<br>不枉近百个日日夜夜与之为伴。因小而大，因弱而强。
+												<br>无论它能走多远，抑或如何支撑？至少我曾倾注全心，无怨无悔 <i class="layui-icon"></i>
+											</p>
+										</div>
+									</li>
+									<li class="layui-timeline-item">
+										<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+										<div class="layui-timeline-content layui-text">
+											<h3 class="layui-timeline-title">8月16日</h3>
+											<p>杜甫的思想核心是儒家的仁政思想，他有“<em>致君尧舜上，再使风俗淳</em>”的宏伟抱负。个人最爱的名篇有：</p>
+											<ul>
+												<li>《登高》</li>
+												<li>《茅屋为秋风所破歌》</li>
+											</ul>
+										</div>
+									</li>
+									<li class="layui-timeline-item">
+										<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+										<div class="layui-timeline-content layui-text">
+											<h3 class="layui-timeline-title">8月15日</h3>
+											<p>
+												中国人民抗日战争胜利72周年
+												<br>常常在想，尽管对这个国家有这样那样的抱怨，但我们的确生在了最好的时代
+												<br>铭记、感恩
+												<br>所有为中华民族浴血奋战的英雄将士
+												<br>永垂不朽
+											</p>
+										</div>
+									</li>
+									<li class="layui-timeline-item">
+										<i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+										<div class="layui-timeline-content">
+											<div class="layui-timeline-title">过去</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部版权区 -->
+		<div class="blog-footer">
+			<hr>
+			<div class="layui-container">
+				<div class="layui-row layui-col-space10">
+					<div class="layui-col-md4">
+						<p>联系我</p>
+						<img src="../static/images/qq.jpg" />
+					</div>
+					<div class="layui-col-md4">
+						<p>版权信息</p>
+						© 2020 - Made by GZC
+					</div>
+					<div class="layui-col-md4">
+						<p>友情链接</p>
+						<a href="https://www.layui.com/" target="_blank">Layui前端框架</a>
+						<a href="https://www.layui.com/" target="_blank">Layui前端框架</a>
+						<a href="https://www.layui.com/" target="_blank">Layui前端框架</a>
+						<a href="https://www.layui.com/" target="_blank">Layui前端框架</a>
+						<a href="https://www.layui.com/" target="_blank">Layui前端框架</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+		<script type="text/javascript" src="../static/js/index.js"></script>
+		<script type="text/javascript" src="../static/js/global.js"></script>
+	</body>
+</html>

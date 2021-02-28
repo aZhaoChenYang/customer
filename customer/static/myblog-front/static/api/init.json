@@ -1,0 +1,125 @@
+{
+	"homeInfo": {
+		"title": "主页",
+		"href": "page/welcome.html?t=1"
+	},
+	"logoInfo": {
+		"title": "后台管理",
+		"image": "",
+		"href": ""
+	},
+	"menuInfo": [{
+			"title": "常规管理",
+			"icon": "",
+			"href": "",
+			"target": "_self",
+			"child": [{
+					"title": "博客管理",
+					"href": "",
+					"icon": "fa fa-file-text-o",
+					"target": "_self",
+					"child": [{
+							"title": "发布博客",
+							"href": "page/blog-editor.html",
+							"icon": "fa fa-send",
+							"target": "_self"
+						},
+						{
+							"title": "博客列表",
+							"href": "page/blog-list.html",
+							"icon": "fa fa-list",
+							"target": "_self"
+						}
+					]
+				},
+				{
+					"title": "评论管理",
+					"href": "",
+					"icon": "fa fa-comments-o",
+					"target": "_self",
+					"child": [{
+							"title": "博客评论",
+							"href": "page/blog-comment.html",
+							"icon": "fa fa fa-comment-o",
+							"target": "_self"
+						},
+						{
+							"title": "网站留言",
+							"href": "page/website-comment.html",
+							"icon": "fa fa-commenting-o",
+							"target": "_self"
+						}
+					]
+				},
+				{
+					"title": "用户",
+					"href": "",
+					"icon": "fa fa-user-o",
+					"target": "_self",
+					"child": [{
+							"title": "用户管理",
+							"href": "page/users.html",
+							"icon": "",
+							"target": "_self"
+						},
+						{
+							"title": "角色管理",
+							"href": "page/role.html",
+							"icon": "",
+							"target": "_self"
+						}
+					]
+				},
+				{
+					"title": "分类",
+					"href": "page/category.html",
+					"icon": "fa fa-folder-o",
+					"target": "_self"
+				},
+				{
+					"title": "标签",
+					"href": "page/tags.html",
+					"icon": "fa fa-tags",
+					"target": "_self"
+				},
+				{
+					"title": "日记",
+					"href": "page/daily.html",
+					"icon": "fa fa-hourglass-half",
+					"target": "_self"
+				},
+				{
+					"title": "相册",
+					"href": "page/photo-album.html",
+					"icon": "fa fa-photo",
+					"target": "_self"
+				},
+				{
+					"title": "公告",
+					"href": "page/notice.html",
+					"icon": "fa fa-bullhorn",
+					"target": "_self"
+				}
+			]
+		},
+		{
+			"title": "网站管理",
+			"icon": "",
+			"href": "",
+			"target": "_self",
+			"child": [{
+					"title": "友情链接",
+					"href": "page/links.html",
+					"icon": "fa fa-link",
+					"target": "_self"
+				},
+				{
+					"title": "网站设置",
+					"href": "page/setting.html",
+					"icon": "fa fa-cogs",
+					"target": "_self"
+				}
+			]
+		}
+	]
+}

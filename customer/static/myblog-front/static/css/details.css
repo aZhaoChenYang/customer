@@ -1,0 +1,27 @@
+.article-title{
+	font-size: 25px;
+	font-weight: bold;
+	padding: 10px 0px;
+}
+.article-title,
+.article-info,
+.article-tags{
+	text-align: center;
+}
+.article-info span,
+.article-tags span{
+	margin-right: 5px;
+}
+.article-info span a,
+.article-tags span a{
+	padding: 0px 3px;
+}
+.article-info span a:hover,
+.article-tags span a:hover{
+	color: #009688;
+	text-decoration: underline;
+}
+
+.article-content{
+	padding: 10px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>留言墙----畅所欲言</title>
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css" />
+		<link rel="stylesheet" href="../static/css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../static/lib/animate.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../static/lib/layui/layui.js"></script>
+	</head>
+	<body>
+		<!-- 头部导航栏 -->
+		<div class="blog-header"></div>
+		<!-- 内容区 -->
+		<div class="blog-content">
+			<div class="layui-container">
+				<div class="layui-row">
+					<div class="base-card animated fadeIn">
+						<div class="base-card-header" style="text-align: center;">
+							<span class="fa fa-commenting" style="font-size: 25px;">&nbsp;留言墙----畅所欲言</span>
+						</div>
+						<div class="base-card-body">
+							<!-- 留言编辑区 -->
+							<div class="blog-editor-box">
+								<div class="layui-form">
+									<div class="layui-form-item">
+										<textarea class="layui-textarea" id="blog-editor" style="display: none;"></textarea>
+									</div>
+									<div class="layui-form-item">
+										<div class="layui-inline">
+											<label class="layui-form-label">邮箱</label>
+											<div class="layui-input-inline" style="width: 200px;">
+												<input type="text" id="email" autocomplete="off" class="layui-input" placeholder="请输入邮箱">
+											</div>
+										</div>
+										<div class="layui-inline">
+											<label class="layui-form-label">昵称</label>
+											<div class="layui-input-inline" style="width: 200px;">
+												<input type="text" id="nickname" autocomplete="off" class="layui-input" placeholder="请输入昵称">
+											</div>
+										</div>
+									</div>
+									<div class="layui-form-item">
+										<button id="btn-submit-message" class="layui-btn">提交留言</button>
+									</div>
+								</div>
+							</div>
+							<!-- 留言展示区 -->
+							<div class="comment-display">
+								<fieldset>
+									<legend>留言展示</legend>
+									<ul>
+										<li>
+											<div class="comment-parent">
+												<div class="comment-card">
+													<div class="comment-card-body">
+														<img src="../static/img/default_avatar.png" />
+														<div class="comment-info">
+															<span class="nickname"><a href="">张三</a></span>
+															<span class="content">哎哟，不错哦！！！</span>
+														</div>
+													</div>
+													<div class="comment-card-footer">
+														<span class="fa fa-clock-o">&nbsp;刚刚</span>
+														<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment-child">
+												<div class="comment-card">
+													<div class="comment-card-body">
+														<img src="../static/img/default_avatar.png" />
+														<div class="comment-info">
+															<span class="nickname"><a href="">小郭</a></span>
+															<span>回复<a href="">@张三</a></span>
+															<span class="content">谢谢！</span>
+														</div>
+													</div>
+													<div class="comment-card-footer">
+														<span class="fa fa-clock-o">&nbsp;刚刚</span>
+														<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment-child">
+												<div class="comment-card">
+													<div class="comment-card-body">
+														<img src="../static/img/default_avatar.png" />
+														<div class="comment-info">
+															<span class="nickname"><a href="">张三</a></span>
+															<span>回复<a href="">@小郭</a></span>
+															<span class="content">加油！！！</span>
+														</div>
+													</div>
+													<div class="comment-card-footer">
+														<span class="fa fa-clock-o">&nbsp;刚刚</span>
+														<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="comment-parent">
+												<div class="comment-card">
+													<div class="comment-card-body">
+														<img src="../static/img/default_avatar.png" />
+														<div class="comment-info">
+															<span class="nickname"><a href="">张三</a></span>
+															<span class="content">哎哟，不错哦！！！</span>
+														</div>
+													</div>
+													<div class="comment-card-footer">
+														<span class="fa fa-clock-o">&nbsp;刚刚</span>
+														<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment-child">
+												<div class="comment-card">
+													<div class="comment-card-body">
+														<img src="../static/img/default_avatar.png" />
+														<div class="comment-info">
+															<span class="nickname"><a href="">小郭</a></span>
+															<span>回复<a href="">@张三</a></span>
+															<span class="content">谢谢！</span>
+														</div>
+													</div>
+													<div class="comment-card-footer">
+														<span class="fa fa-clock-o">&nbsp;刚刚</span>
+														<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+													</div>
+												</div>
+											</div>
+											<div class="comment-child">
+												<div class="comment-card">
+													<div class="comment-card-body">
+														<img src="../static/img/default_avatar.png" />
+														<div class="comment-info">
+															<span class="nickname"><a href="">张三</a></span>
+															<span>回复<a href="">@小郭</a></span>
+															<span class="content">加油！！！</span>
+														</div>
+													</div>
+													<div class="comment-card-footer">
+														<span class="fa fa-clock-o">&nbsp;刚刚</span>
+														<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部版权区 -->
+		<div class="blog-footer"></div>
+		<script type="text/javascript" src="../static/js/global.js"></script>
+		<script type="text/javascript" src="../static/js/message.js"></script>
+	</body>
+</html>

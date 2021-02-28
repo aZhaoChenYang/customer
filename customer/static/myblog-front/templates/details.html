@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>详情</title>
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css">
+		<link rel="stylesheet" href="../static/css/global.css" />
+		<link rel="stylesheet" type="text/css" href="../static/lib/animate.css"/>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../static/lib/layui/layui.js"></script>
+	</head>
+	<body>
+		<div class="blog-header"></div>
+
+		<!-- 内容区 -->
+		<div class="blog-content">
+			<div class="layui-container">
+				<div class="layui-row">
+					<div class="layui-col-md8">
+						<div class="base-card animated fadeIn">
+							<div class="article-title">
+								基于SpringBoot开发的博客
+							</div>
+							<div class="article-info">
+								<span class="layui-badge layui-bg-green">原创</span>
+								<span class="layui-badge">转载</span>
+								<span class="fa fa-clock-o"> 2020-04-15 20:30</span>
+								<span class="layui-icon layui-icon-username">小郭</span>
+								<span class="fa fa-folder-o"><a href="">Mybatis</a></span>
+							</div>
+							<hr>
+							<div class="article-content">
+								<p>基于SpringBoot开发的博客</p>
+								<p>基于SpringBoot开发的博客</p>
+								<h2>基于SpringBoot开发的博客</h2>
+								<p>基于SpringBoot开发的博客</p>
+								<p>基于SpringBoot开发的博客</p>
+								<p>基于SpringBoot开发的博客</p>
+								<p>基于SpringBoot开发的博客</p>
+								<p>基于SpringBoot开发的博客</p>
+								<p>基于SpringBoot开发的博客</p>
+							</div>
+							<div class="article-copyright">
+								<blockquote class="layui-elem-quote">
+									<p>版权声明：本文由xxx原创，转载请标明出处！</p>
+									<p>本文链接：https://www.xxx.com/xxx/xxxx/323424</p>
+								</blockquote>
+							</div>
+							<div class="article-tags">
+								<span class="fa fa-tag"><a href="">springboot</a></span>
+								<span class="fa fa-tag"><a href="">springboot</a></span>
+								<span class="fa fa-tag"><a href="">springboot</a></span>
+								<span class="fa fa-tag"><a href="">springboot</a></span>
+							</div>
+							<hr />
+						</div>
+						<div class="base-card animated slideInUp">
+							<fieldset class="layui-elem-field">
+								<legend>评论</legend>
+								<div class="layui-field-box">
+									<!-- 评论编辑器-->
+									<div class="blog-editor-box">
+										<div class="layui-form">
+											<div class="layui-form-item">
+												<textarea class="layui-textarea" id="blog-editor" style="display: none"></textarea>
+											</div>
+											<div class="layui-form-item">
+												<div class="layui-inline">
+													<label class="layui-form-label">邮箱</label>
+													<div class="layui-input-inline" style="width: 200px;">
+														<input type="text" id="email" autocomplete="off" class="layui-input" placeholder="请输入邮箱">
+													</div>
+												</div>
+												<div class="layui-inline">
+													<label class="layui-form-label">昵称</label>
+													<div class="layui-input-inline" style="width: 200px;">
+														<input type="text" id="nickname" autocomplete="off" class="layui-input" placeholder="请输入昵称">
+													</div>
+												</div>
+											</div>
+											<div class="layui-form-item">
+												<button id="btn-submit-message" class="layui-btn">提交留言</button>
+											</div>
+										</div>
+									</div>
+									<div class="blog-comment">
+										<ul>
+											<li>
+												<div class="comment-parent">
+													<div class="comment-card">
+														<div class="comment-card-body">
+															<img src="../static/img/default_avatar.png" />
+															<div class="comment-info">
+																<span class="nickname"><a href="">张三</a></span>
+																<span class="content">哎哟，不错哦！！！</span>
+															</div>
+														</div>
+														<div class="comment-card-footer">
+															<span class="fa fa-clock-o">&nbsp;刚刚</span>
+															<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+														</div>
+													</div>
+												</div>
+												<div class="comment-child">
+													<div class="comment-card">
+														<div class="comment-card-body">
+															<img src="../static/img/default_avatar.png" />
+															<div class="comment-info">
+																<span class="nickname"><a href="">小郭</a></span>
+																<span>回复<a href="">@张三</a></span>
+																<span class="content">谢谢！</span>
+															</div>
+														</div>
+														<div class="comment-card-footer">
+															<span class="fa fa-clock-o">&nbsp;刚刚</span>
+															<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+														</div>
+													</div>
+												</div>
+												<div class="comment-child">
+													<div class="comment-card">
+														<div class="comment-card-body">
+															<img src="../static/img/default_avatar.png" />
+															<div class="comment-info">
+																<span class="nickname"><a href="">张三</a></span>
+																<span>回复<a href="">@小郭</a></span>
+																<span class="content">加油！！！</span>
+															</div>
+														</div>
+														<div class="comment-card-footer">
+															<span class="fa fa-clock-o">&nbsp;刚刚</span>
+															<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+														</div>
+													</div>
+												</div>
+
+											</li>
+											<li>
+												<div class="comment-parent">
+													<div class="comment-card">
+														<div class="comment-card-body">
+															<img src="../static/img/default_avatar.png" />
+															<div class="comment-info">
+																<span class="nickname"><a href="">张三</a></span>
+																<span class="content">冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲冲</span>
+															</div>
+														</div>
+														<div class="comment-card-footer">
+															<span class="fa fa-clock-o">&nbsp;刚刚</span>
+															<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+														</div>
+													</div>
+												</div>
+												<div class="comment-child">
+													<div class="comment-card">
+														<div class="comment-card-body">
+															<img src="../static/img/default_avatar.png" />
+															<div class="comment-info">
+																<span class="nickname"><a href="">小郭</a></span>
+																<span>回复<a href="">@张三</a></span>
+																<span class="content">谢谢！</span>
+															</div>
+														</div>
+														<div class="comment-card-footer">
+															<span class="fa fa-clock-o">&nbsp;刚刚</span>
+															<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+														</div>
+													</div>
+												</div>
+												<div class="comment-child">
+													<div class="comment-card">
+														<div class="comment-card-body">
+															<img src="../static/img/default_avatar.png" />
+															<div class="comment-info">
+																<span class="nickname"><a href="">张三</a></span>
+																<span>回复<a href="">@小郭</a></span>
+																<span class="content">加油！！水电费发发发发分萨芬是防守打法沙发萨芬是第三方士大夫士大夫沙发是的防守打法沙发是的发送到防守打法沙发发送发送大发斯蒂芬斯蒂芬士大夫士大夫士大夫是的发生萨达！</span>
+															</div>
+														</div>
+														<div class="comment-card-footer">
+															<span class="fa fa-clock-o">&nbsp;刚刚</span>
+															<span><a href="javascript:;" onclick="reply(1232,'zhangsan')" style="color: #009688;">回复</a></span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+					<div class="layui-col-md4">
+						<!-- 热文推荐 -->
+						<div class="base-card animated bounceInRight">
+							<div class="base-card-header">
+								<i class="layui-icon layui-icon-fire"></i>
+								热文推荐
+								<span style="float: right;">
+									<a href="">more<i class="layui-icon layui-icon-right"></i></a>
+								</span>
+							</div>
+							<div class="base-card-body">
+								<ul class="hot-blog">
+									<li>
+										<span class="layui-badge">1</span>
+										<a href="">基于springboot开发的个人博客</a>
+									</li>
+									<li>
+										<span class="layui-badge layui-bg-orange">2</span>
+										<a href="">基于springboot开发的个人博客</a>
+									</li>
+									<li>
+										<span class="layui-badge layui-bg-orange">3</span>
+										<a href="">基于springboot开发的个人博客</a>
+									</li>
+									<li>
+										<span class="layui-badge layui-bg-blue">4</span>
+										<a href="">基于springboot开发的个人博客</a>
+									</li>
+									<li>
+										<span class="layui-badge layui-bg-blue">5</span>
+										<a href="">基于springboot开发的个人博客</a>
+									</li>
+									<li>
+										<span class="layui-badge layui-bg-blue">6</span>
+										<a href="">基于springboot开发的个人博客</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- 标题 -->
+						<div class="base-card animated bounceInRight delay-1s">
+							<div class="base-card-header">
+								<i class="fa fa-navicon "></i>
+								目录
+							</div>
+							<div class="base-card-body">
+								<ul>
+									<li>标题1</li>
+									<li>标题2</li>
+									<li>标题3</li>
+									<li>标题4</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部版权区 -->
+		<div class="blog-footer"></div>
+
+
+		<link rel="stylesheet" type="text/css" href="../static/css/details.css" />
+		<script src="../static/js/global.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

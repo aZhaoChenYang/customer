@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../static/lib/animate.css" />
+		<link rel="stylesheet" href="../static/css/global.css" />
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="../static/lib/layui/layui.js"></script>
+	</head>
+	<body>
+			
+		
+		<!-- 内容区 -->
+		<div class="blog-content">
+			<div class="layui-container">
+				<div class="form-center animated bounceInDown">
+					<div class="base-card">
+						<div class="base-card-header">
+							注册
+						</div>
+						<div class="base-card-body">
+							<form class="layui-form layui-form-pane" action="">
+								<div class="layui-form-item">
+									<label class="layui-form-label" for="L-username">用户名</label>
+									<div class="layui-input-inline">
+										<input type="text" id="L-username" name="username" required lay-verify="required" placeholder="请输入用户名"
+										 autocomplete="off" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">
+		
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label" for="L_password">密码</label>
+									<div class="layui-input-inline">
+										<input type="password" id="L_password" name="password" required lay-verify="required" placeholder="请输入密码"
+										 autocomplete="off" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">
+		
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<label class="layui-form-label" for="L_cpassword">确认密码</label>
+									<div class="layui-input-inline">
+										<input type="password" id="L_cpassword" name="cpassword" required lay-verify="required|cpassword" placeholder="请输入确认密码"
+										 autocomplete="off" class="layui-input">
+									</div>
+									<div class="layui-form-mid layui-word-aux">
+										
+									</div>
+								</div>
+								<!-- 	<div class="layui-form-item">
+									<label for="L_vercode" class="layui-form-label">验证码</label>
+									<div class="layui-input-inline">
+										<input type="text" id="L_vercode" name="verCode" required lay-verify="required" placeholder="请输入验证码"
+										 autocomplete="off" class="layui-input">
+									</div>
+									<div class="layui-form-mid" style="padding:3px 0 !important">
+										<a href="javascript:refreshCode()">
+											<img alt="验证码" src="/verificationCode">
+										</a>
+									</div>
+								</div> -->
+								<div class="layui-form-item">
+									<button class="layui-btn" lay-submit lay-filter="btn-register">立即注册</button>
+								</div>
+								<div class="layui-form-item">
+									<a href="login.html">已有账号？前往登录</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../static/js/register.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//点击验证码刷新
+		function refreshCode() {
+			// 强制刷新 
+			alert("刷新验证码");
+			$("img").attr("src", "${pageContext.request.contextPath }/verificationCode?t=" + (new Date().getTime()));
+		}
+	</script>
+</html>
